@@ -4,34 +4,34 @@ title: "instructions"
 description: "ideas"
 ---
 
-c/v | (I) | instruction   | type           | comment
---- | --- | ------------- | -------------- | ---
- v  |  a  | additive      | junction       |
-    |  b  |               |                |
-    |  c  |               |                |
-    |  d  | division      | operation      | add [div & mod] operation to HEAD operation queue
- v  |  e  | executive     | junction       | execute turn intention
-    |  f  |               |                |
-    |  g  | get           | I/O            | read value from input
-    |  h  |               |                |
- v  |  i  | ?             | junction       |
-    |  j  |               |                |
-    |  k  |               |                |
-    |  l  | left          | turn intention | add (-90˚) to **e**xecute turn intention
-    |  m  | multiply      | operation      |
-    |  n  | nop           |                | no operation
- v  |  o  | operative     | junction       | comparison from queue
-    |  p  | put           | I/O            | write value to output
-    |  q  | queue         | operand        | add HEAD var index to HEAD operand queue
-    |  r  | right         | turn intention | add(90˚) to **e**xecute turn intention
-    |  s  | sum           | operation      | add **s**um operation to HEAD operation queue
-    |  t  |               |                |
- v  |  u  | unconditional | junction       |
-    |  v  |               |                |
-    |  w  |               |                |
-    |  x  |               |                |
-    |  y  |               |                |
-    |  z  |               |                |
+ c/v | (I) | instruction   | type           | comment
+:---:|:---:| ------------- | -------------- | ---
+  v  |  a  | additive      | junction       |
+     |  b  |               |                |
+     |  c  |               |                |
+     |  d  | division      | operation      | add [div & mod] operation to HEAD operation queue
+  v  |  e  | executive     | junction       | execute turn intention
+     |  f  |               |                |
+     |  g  | get           | I/O            | read value from input
+     |  h  |               |                |
+  v  |  i  | ?             | junction       |
+     |  j  |               |                |
+     |  k  |               |                |
+     |  l  | left          | turn intention | add (-90˚) to **e**xecute turn intention
+     |  m  | multiply      | operation      |
+     |  n  | nop           |                | no operation
+  v  |  o  | operative     | junction       | comparison from queue
+     |  p  | put           | I/O            | write value to output
+     |  q  | queue         | operand        | add HEAD var index to HEAD operand queue
+     |  r  | right         | turn intention | add(90˚) to **e**xecute turn intention
+     |  s  | sum           | operation      | add **s**um operation to HEAD operation queue
+     |  t  |               |                |
+  v  |  u  | unconditional | junction       |
+     |  v  |               |                |
+     |  w  |               |                |
+     |  x  |               |                |
+     |  y  |               |                |
+     |  z  |               |                |
 
 ### junctions
 
