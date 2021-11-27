@@ -1,6 +1,6 @@
 <div id="breadcrumbs">
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-<a href="/">home</a>
+<a href="/gridrun/">GridRun</a>
 {% for crumb in crumbs offset: 1 %}
   {% if forloop.last %}
     / {{ page.title }}
