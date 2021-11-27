@@ -45,7 +45,7 @@ move down         move up
        |
        | /-------|
        |V        |
------> o -----> -|
+-----> J -----> -|
        |
        V
 ```
@@ -74,15 +74,13 @@ move down         move up
 ### additive (a) junction: compare 2
 
 ```
-               a
+               x
                |
                V
-a <= b  <----- o -----> a >= b
+x <= y  <----- a ----->  x >= y
                Λ
                |
-               b
-
-
+               y
 ```
 
 ### executive (e) junction: based on turn intention
@@ -91,12 +89,12 @@ turn left:
 ```
        Λ
        |
------> o
+-----> e
 ```
 
 turn right:
 ```
------> o
+-----> e
        |
        V
 ```
@@ -106,13 +104,13 @@ turn right:
 ### operative (o) junction: comparison from queue
 
 ```
-     a < b
+     x < y
        Λ
        |
------> o -----> a = b
+-----> o -----> x = y
        |
        V
-     a > b
+     x > y
 ```
 
 ### unconditional (u) junction
@@ -120,7 +118,7 @@ turn right:
 ```
        Λ
        |
------> o ----->
+-----> u ----->
        |
        V
 ```
