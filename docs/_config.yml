@@ -1,5 +1,5 @@
 
-theme: hacker
+theme: jekyll-theme-hacker
 
 title: GridRun
 description: an esoteric programming language
@@ -18,6 +18,8 @@ collections_dir     : ./collections
 #includes_dir        : _includes
 #sass:
 #  sass_dir: _sass
+sass:
+  sass_dir: assets/css
 #collections:
 #  posts:
 #    output          : true
