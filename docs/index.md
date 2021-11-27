@@ -4,8 +4,6 @@ layout: "default"
 
 In **GridRun** instructions are laid out along paths on a grid and are read by HEAD(s) moving along those paths.
 
-# ideas
+### subpages
 
-- [general](ideas/general.md)
-- [instructions](ideas/instructions.md)
-- [concepts](ideas/concepts.md)
+- [ideas](ideas/index.md)
