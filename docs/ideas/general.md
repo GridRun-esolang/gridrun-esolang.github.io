@@ -64,7 +64,7 @@ description: ""
      |  t  | target, to, turn
   v  |  u  | up (direction), use
      |  v  | value, var, variable
-     |  w  | while, withdraw
+     |  w  | while, withdraw, write
      |  x  | eXecute, eXit
      |  y  | yield
      |  z  | zero
