@@ -1,12 +1,12 @@
 <div id="breadcrumbs">
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-<a href="/gridrun/">GridRun</a>
+<a href="/gridrun">{{ site.title }}</a>
 {% for crumb in crumbs offset: 1 %}
   {% if forloop.last %}
     / {{ page.title }}
   {% else %}
     {% assign crumb_limit = forloop.index %}
-    / <a href="{% for crumb in crumbs offset: 1 limit: crumb_limit %}/{{ crumb }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+    / <a href="/gridrun{% for crumb in crumbs offset: 1 limit: crumb_limit %}/{{ crumb }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
   {% endif %}
 {% endfor %}
 </div>
