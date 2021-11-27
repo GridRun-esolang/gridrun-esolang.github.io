@@ -36,61 +36,61 @@ description: ""
 
 # shared
 
-- vaariable index
+- variable index
 
 # possible instructions
 
-c/v | letter | possible meanings
+c/v | (I) | possible instructions / meanings
 --- | --- | ---
-v | a | add, apply
-  | b | backwards (direction), branch, bridge
-  | c | char, choose, compare, const, crossroads
-  | d | div, down (direction)
-v | e | end, execute, exit
-  | f | for, fork, forward (direction), from
-  | g | get, goto
-  | h | hop
-v | i | if, input, iterate
-  | j | join, jump, junction
-  | k | keep, key, kill
-  | l | left (direction), loop
-  | m | modulo, multiply
-  | n | nop
-v | o | output
-  | p | pipe (toggle), pointer, pop, push, put
-  | q | queue, quit
-  | r | reverse, right (direction)
-  | s | seek, select, set, skip, split, source, store, sum
-  | t | target, to, turn
-v | u | up (direction), use
-  | v | value, var, variable
-  | w | while, withdraw
-  | x | eXecute, eXit
-  | y | yield
-  | z | zero
+ v  |  a  | add, apply
+    |  b  | backwards (direction), branch, bridge
+    |  c  | char, choose, compare, const, crossroads
+    |  d  | div, down (direction)
+ v  |  e  | end, execute, exit
+    |  f  | for, fork, forward (direction), from
+    |  g  | get, goto
+    |  h  | hop
+ v  |  i  | if, input, iterate
+    |  j  | join, jump, junction
+    |  k  | keep, key, kill
+    |  l  | left (direction), loop
+    |  m  | modulo, multiply
+    |  n  | nop
+ v  |  o  | output
+    |  p  | pipe (toggle), pointer, pop, push, put
+    |  q  | queue, quit
+    |  r  | reverse, right (direction)
+    |  s  | seek, select, set, skip, split, source, store, sum
+    |  t  | target, to, turn
+ v  |  u  | up (direction), use
+    |  v  | value, var, variable
+    |  w  | while, withdraw
+    |  x  | eXecute, eXit
+    |  y  | yield
+    |  z  | zero
 
 # directions
 
 ## v.1
 
-. | u | .
+  .  |  u  |  .
 :---:|:---:|:---:
-l | . | r
-. | d | .
+  l  |  .  |  r
+  .  |  d  |  .
 
 ## v.2
 
-. | f | .
+  .  |  f  |  .
 :---:|:---:|:---:
-l | . | r
-. | b | .
+  l  |  .  |  r
+  .  |  b  |  .
 
 ## v.3
 
-. | (-) | .
-:---:|:---:|:---:
-l | . | r
-. | ll/rr | .
+  .  |  (-)  |  .
+:---:|:-----:|:---:
+  l  |  .    |  r
+  .  | ll/rr |  .
 
 # note
 

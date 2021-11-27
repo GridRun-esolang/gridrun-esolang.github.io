@@ -4,35 +4,62 @@ title: "instructions"
 description: "ideas"
 ---
 
-c/v | letter | instruction | comment
---- | --- | --- | ---
-v | a | apply    | HEAD operation queue -> HEAD operand queue => HEAD var index
-  | b | branch   | unconditional 3-way branching
-  | c | compare  | 3-way branching: `a > b` -> left, `a = b` -> forward, `a < b` -> right
-  | d | division | add [div & mod] operation to HEAD operation queue
-v | e | execute  | execute turn intention
-  | f |          |
-  | g |          |
-  | h |          |
-v | i | input    | read value from input
-  | j |          |
-  | k |          |
-  | l | left     | add (-90˚) to **e**xecute turn intention
-  | m |          |
-  | n | nop      | no operation
-v | o | output   | write value to output
-  | p |          |
-  | q | queue    | add HEAD var index to HEAD operand queue
-  | r | right    | add(90˚) to **e**xecute turn intention
-  | s | sum      | add **s**um operation to HEAD operation queue
-  | t |          |
-v | u |          |
-  | v |          |
-  | w |          |
-  | x | eXecute  | reverse HEAD to the last **e**xecute junction
-  | y |          |
-  | z |          |
+c/v | (I) | instruction   | type           | comment
+--- | --- | ------------- | -------------- | ---
+ v  |  a  | additive      | junction       |
+    |  b  |               |                |
+    |  c  |               |                |
+    |  d  | division      | operation      | add [div & mod] operation to HEAD operation queue
+ v  |  e  | executive     | junction       | execute turn intention
+    |  f  |               |                |
+    |  g  | get           | I/O            | read value from input
+    |  h  |               |                |
+ v  |  i  | ?             | junction       |
+    |  j  |               |                |
+    |  k  |               |                |
+    |  l  | left          | turn intention | add (-90˚) to **e**xecute turn intention
+    |  m  | multiply      | operation      |
+    |  n  | nop           |                | no operation
+ v  |  o  | operative     | junction       | comparison from queue
+    |  p  | put           | I/O            | write value to output
+    |  q  | queue         | operand        | add HEAD var index to HEAD operand queue
+    |  r  | right         | turn intention | add(90˚) to **e**xecute turn intention
+    |  s  | sum           | operation      | add **s**um operation to HEAD operation queue
+    |  t  |               |                |
+ v  |  u  | unconditional | junction       |
+    |  v  |               |                |
+    |  w  |               |                |
+    |  x  |               |                |
+    |  y  |               |                |
+    |  z  |               |                |
+
+### junctions
+
+- a : additive
+- e : executive
+- i : ?
+- o : operative
+- u : unconditional
+
+### I/O
+
+- g : get
+- p : put
+
+### operations
+
+- d : division
+- m : multiply
+- s : sum
+
+# from previous, not yet in current
+
+- apply
+    - HEAD operation queue -> HEAD operand queue => HEAD var index
+- eXecute
+    - reverse HEAD to the last **e**xecute junction
 
 # history
 
-- 2021-11-14: initial start
+1. initial partial list
+2. changed concept so that vowels represent branching

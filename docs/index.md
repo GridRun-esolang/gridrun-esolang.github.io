@@ -8,3 +8,4 @@ In **GridRun** instructions are laid out along paths on a grid and are read by H
 
 - [general](ideas/general.md)
 - [instructions](ideas/instructions.md)
+- [concepts](ideas/concepts.md)
